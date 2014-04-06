@@ -1,0 +1,12 @@
+---
+- name: Test playbook for nvm role
+  hosts: all
+  sudo: yes
+  sudo_user: root
+
+  roles:
+    - role: ansible-rbenv
+      rbenv:
+        version: v0.4.0
+        ruby_version: 2.0.0-p247
+        user: vagrant
