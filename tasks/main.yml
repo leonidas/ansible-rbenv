@@ -30,7 +30,7 @@
   sudo_user: "{{ rbenv.user }}"
   copy: src={{ item }} dest=~/.gemrc
   with_first_found:
-    - ../../../files/.gemrc
+    - ../../../files/rbenv/.gemrc
     - .gemrc
   tags: rbenv
 
