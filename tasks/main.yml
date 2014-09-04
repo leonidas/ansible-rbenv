@@ -6,7 +6,7 @@
 - name: Install rbenv
   sudo: yes
   sudo_user: "{{ rbenv.user }}"
-  git: repo=git://github.com/sstephenson/rbenv.git dest=~/.rbenv version={{ rbenv.version }}
+  git: repo=https://github.com/sstephenson/rbenv.git dest=~/.rbenv version={{ rbenv.version }}
   tags: rbenv
 
 - name: Add ~.rbenv/bin to PATH
